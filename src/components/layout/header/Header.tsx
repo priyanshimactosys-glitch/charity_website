@@ -5,15 +5,15 @@ import Button from "../../common/Button";
 
 export default function Header() {
     return (
-        <nav className="py-3">
+        <nav className="py-1">
             <div className="">
                 <div className="flex items-center justify-between h-20">
                     <div className="flex justify-between gap-10">
                         <Image
                             src="/images/logo.png"
                             alt="Veters Initiative Logo"
-                            width={109}
-                            height={70}
+                            width={103}
+                            height={64}
                             priority
                         />
 
