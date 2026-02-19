@@ -4,7 +4,7 @@ export default function StatsBar() {
   return (
     <div className="relative md:absolute md:left-1/2 md:-bottom-100 lg:-bottom-100 md:-translate-x-1/2 w-full max-w-5xl mx-auto  md:mt-0">
       <div className="bg-[#F7CCCC] md:bg-transparent p-10  md:p-0 ">
-        <div className="bg-[#F3F3F3] md:bg-white shadow-xl rounded-2xl p-4">
+        <div className="bg-[#F3F3F3] md:bg-white shadow-xl rounded-2xl p-6">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-y-6 md:gap-2 relative">
             <Stat icon="/images/volunteer.png" value="585+" label="Volunteers" />
 
