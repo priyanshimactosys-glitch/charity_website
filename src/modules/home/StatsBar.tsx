@@ -4,7 +4,7 @@ export default function StatsBar() {
   return (
     <div className="relative md:absolute md:left-1/2 md:-bottom-100 lg:-bottom-100 md:-translate-x-1/2 w-full max-w-5xl mx-auto  md:mt-0">
       <div className="bg-[#F7CCCC] md:bg-transparent p-10  md:p-0 ">
-        <div className="bg-[#F3F3F3] md:bg-white shadow-xl rounded-2xl p-6 md:p-8">
+        <div className="bg-[#F3F3F3] md:bg-white shadow-xl rounded-2xl p-4">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-y-6 md:gap-2 relative">
             <Stat icon="/images/volunteer.png" value="585+" label="Volunteers" />
 
@@ -64,7 +64,7 @@ function StatWithDivider({ children }: any) {
 }
 function StatDivider({ offset = "-top-3", hidden = false }: { offset?: string; hidden?: boolean }) {
   return (
-    <div className={`items-center relative ${hidden ? 'hidden' : ' md:flex'}`}>
+    <div className={`items-center relative ${hidden ? 'hidden md:flex' : 'flex md:flex'}`}>
       <div className="w-px h-13 bg-gray-300"></div>
       <span
         className={`absolute left-2.1 -translate-x-1/2 w-2.5 h-2.5 bg-red-600 rounded-full ${offset}`}
@@ -78,14 +78,22 @@ function Stat({ icon, value, label, constrainWidth }: any) {
   return (
     <div className="flex items-center gap-3">
       <Image src={icon} alt="" width={35} height={35} />
-    <div style={constrainWidth ? { maxWidth: '65px' } : {}}>
 
-        <p className="font-semibold text-lg md:text-xl">{value}</p>
-        <p className="text-xs md:text-base text-text">{label}</p>
+      <div
+        className={constrainWidth ? "max-w-[65px] md:max-w-none" : ""}
+      >
+        <p className="font-semibold text-lg md:text-xl">
+          {value}
+        </p>
+
+        <p className="text-xs md:text-base text-text">
+          {label}
+        </p>
       </div>
     </div>
   );
 }
+
 
 function CTA({ text, color }: any) {
   return (

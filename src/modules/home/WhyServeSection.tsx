@@ -4,10 +4,10 @@ import { Play } from "lucide-react";
 
 export default function WhyServeSection() {
     return (
-        <section className="bg-[#F7CCCC] py-25">
+        <section className="bg-[#F7CCCC] py-10 md:py-25">
             <Container>
 
-                <p className="text-center text-4xl font-semibold mb-12">
+                <p className="text-center text-2xl md:text-4xl font-bold mb-8 md:mb-12">
                     Why We Serve, Why It Matters
                 </p>
 
@@ -18,7 +18,8 @@ export default function WhyServeSection() {
                         alt="Why We Serve"
                         width={1201}
                         height={514}
-                        className="w-full h-auto rounded object-cover"
+                        className="w-full h-auto rounded object-cover w-[343px] h-[146px] md:w-[1201px] md:h-[514px]"
+
                     />
 
                     <button className="absolute inset-0 flex items-center justify-center">
