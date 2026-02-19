@@ -104,9 +104,7 @@ export default function MissionSection() {
                             />
                             <span>456 Community Center Dr., Seattle, WA 98109</span>
                         </div>
-
                     </div>
-
 
                     <div className="text-center text-base text-text mt-5 border-t border-[#D9D9D9] pt-4">
                         © 2026 | V'Peters Initiative.

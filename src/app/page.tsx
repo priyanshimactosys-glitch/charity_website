@@ -16,7 +16,7 @@ export default function Home() {
       <ServicesSection/>  
       <GetHelpSection/>
       <ProfessionalServices/>
-      <SupportSection/>
+      {/* <SupportSection/> */}
       <WhyServeSection/>
       <MissionSection/>
     </main>
