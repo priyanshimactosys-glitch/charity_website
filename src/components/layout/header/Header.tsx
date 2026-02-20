@@ -11,7 +11,7 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <nav className="bg-white relative z-50 border-b">
+    <nav className="bg-white relative z-50 ">
 
       <div className="max-w-7xl mx-auto px-4">
 

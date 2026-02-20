@@ -1,10 +1,16 @@
 import HeroBlock from "@/src/modules/cms/blocks/HeroBlock";
 import TextBlock from "@/src/modules/cms/blocks/TextBlock";
+import HelpSection from "@/src/modules/whyus/sections/HelpSection";
+import ImpactStats from "@/src/modules/whyus/sections/ImpactStats";
+import MissionVision from "@/src/modules/whyus/sections/MissionVision";
 
 
 const BLOCKS: any = {
   hero: HeroBlock,
   text: TextBlock,
+  mission_vision: MissionVision,
+  impact_stats: ImpactStats,
+  help_section: HelpSection
 };
 
 export default function SectionRenderer({ sections }: any) {

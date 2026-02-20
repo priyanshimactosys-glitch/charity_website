@@ -23,25 +23,18 @@ export const mockPages: any = {
         slug: "why-us",
         template: "standard",
         sections: [
-              {
+            {
                 type: "hero",
                 content: {
-                  title: "About VPeters Initiative",
-                  subtitle: "Empowering families and individuals through education, access, and opportunity.",
-                  alignment: "left"
+                    title: "About VPeters Initiative",
+                    subtitle: "Empowering families and individuals through education, access, and opportunity.",
+                    backgroundImage: '/images/slug-bg.png',
+                    mobileImage: '/images/slug-mobil-bg.png'
                 },
-              }
-            // {
-            //     type: "hero",
-            //     title: "About VPeters Initiative",
-            //     subtitle:
-            //         "Empowering families and individuals through education, access, and opportunity.",
-            //     backgroundImage: "/images/whyus-hero.jpg",
-            //     alignment: "left"
-            // }
-,
+            },
             { "type": "mission_vision" },
-            { "type": "impact_stats" }
+            { "type": "impact_stats" },
+            { "type": "help_section" }
         ],
     },
 
