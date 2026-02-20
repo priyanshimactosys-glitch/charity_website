@@ -34,7 +34,7 @@ export const menuData = [
       {
         id: "all",
         title: "View All Services >>>>",
-        slug: "/services",
+        slug: "/allServices",
       },
     ],
   },

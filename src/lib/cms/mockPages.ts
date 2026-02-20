@@ -37,6 +37,23 @@ export const mockPages: any = {
             { "type": "help_section" }
         ],
     },
+    "allServices": {
+        slug: "view-all-services",
+        template: "standard",
+        sections: [
+            {
+                type: "hero",
+                content: {
+                    title: "Our Services",
+                    subtitle: "Your trusted source for identity, document, and credential services.",
+                    backgroundImage: '/images/slug-bg.png',
+                    mobileImage: '/images/slug-mobil-bg.png'
+                },
+            },
+            { "type": "services" },
+        
+        ],
+    },
 
 
 };
